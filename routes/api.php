@@ -21,3 +21,21 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 Route::get('users',[UserController::class,'index']);
 Route::get('users/{id}',[UserController::class,'show']);
 Route::post('addnew',[UserController::class,'store']);
+
+
+// table user: -id client
+//                    --client
+
+// status : --is status
+//               --admin
+//               --user
+// table produit: --id produit
+//                           --categorie produit:--id categorie
+//                                                              --nom categorie
+//                           --prix produit
+//                          --image produit
+// transaction :--id transaction
+//                        --id acheteur
+//                        --id vendeur
+//                        --montant transaction
+//                        --etat transaction
