@@ -20,6 +20,8 @@ class UserFactory extends Factory
         return [
             'name' => fake()->name(),
             'email' => fake()->unique()->safeEmail(),
+            'image' => fake()->image(dirname(__DIR__, 2) . DIRECTORY_SEPARATOR . 'resources' . DIRECTORY_SEPARATOR . 'img'. DIRECTORY_SEPARATOR . 'photos' . DIRECTORY_SEPARATOR . 'profiles', 640, 480, null, true, true, null, false, 'jpg'),
+            'sexe' => "f",
             'email_verified_at' => now(),
             'password' => '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', // password
             'remember_token' => Str::random(10),
