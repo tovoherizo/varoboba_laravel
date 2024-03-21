@@ -17,7 +17,7 @@ return new class extends Migration
             $table->tinyInteger('prix_produit');
             $table->unsignedBigInteger('id_client');
             $table->unsignedBigInteger('id_categorie_produit');
-            $table->unsignedBigInteger('id_taille');
+            $table->unsignedBigInteger('id_taille_produit');
             $table->unsignedBigInteger('id_tranche_age');
             $table->unsignedBigInteger('id_marque_produit');
             $table->timestamps();
