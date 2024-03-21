@@ -5,6 +5,7 @@ namespace Database\Seeders;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 
 use App\Models\MarqueProduit;
+use App\Models\TailleProduit;
 use App\Models\TrancheAge;
 use Illuminate\Database\Seeder;
 
@@ -227,25 +228,30 @@ class DatabaseSeeder extends Seeder
         //         'nom_marque_produit' => 'CHLOE - Seconde Main'
         //     ]
         // );
-        TrancheAge::factory()->create(
-            [
-                'nom_tranche_age' => 'adulte'
-            ]
-        );
-        TrancheAge::factory()->create(
-            [
-                'nom_tranche_age' => 'adolescent'
-            ]
-        );
-        TrancheAge::factory()->create(
-            [
-                'nom_tranche_age' => 'enfant'
-            ]
-        );
-        TrancheAge::factory()->create(
-            [
-                'nom_tranche_age' => 'bébé'
-            ]
+
+        // TrancheAge::factory()->create(
+        //     [
+        //         'nom_tranche_age' => 'adulte'
+        //     ]
+        // );
+        // TrancheAge::factory()->create(
+        //     [
+        //         'nom_tranche_age' => 'adolescent'
+        //     ]
+        // );
+        // TrancheAge::factory()->create(
+        //     [
+        //         'nom_tranche_age' => 'enfant'
+        //     ]
+        // );
+        // TrancheAge::factory()->create(
+        //     [
+        //         'nom_tranche_age' => 'bébé'
+        //     ]
+        // );
+
+        TailleProduit::factory()->create(
+
         );
     }
 }
