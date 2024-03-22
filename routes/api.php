@@ -18,6 +18,7 @@ use App\http\Controllers\UserController;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
+//route utilisateur
 Route::get('users',[UserController::class,'index']);
 Route::get('users/{id}',[UserController::class,'show']);
 Route::post('addnew',[UserController::class,'store']);
