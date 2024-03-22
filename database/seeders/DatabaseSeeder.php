@@ -250,8 +250,8 @@ class DatabaseSeeder extends Seeder
         //     ]
         // );
 
-        TailleProduit::factory()->create(
+        // TailleProduit::factory()->create(
 
-        );
+        // );
     }
 }

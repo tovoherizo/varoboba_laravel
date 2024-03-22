@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ProduitController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\http\Controllers\UserController;
@@ -25,7 +26,12 @@ Route::post('addnew',[UserController::class,'store']);
 Route::put('usersupdate/{id}',[UserController::class,'update']);
 Route::delete('usersdelete/{id}',[UserController::class,'destroy']);
 
-
+//produit
+Route::get('produits', [ProduitController::class, 'index']);
+Route::get('produits/{id}', [ProduitController::class, 'show']);
+Route::post('addnewProduit', [ProduitController::class, 'store']);
+Route::put('produitsupdate/{id}', [ProduitController::class, 'update']);
+Route::delete('produitsdelete/{id}', [ProduitController::class, 'destroy']);
 
 // table user: -id client
 //                    --client
