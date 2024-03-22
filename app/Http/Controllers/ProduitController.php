@@ -12,10 +12,9 @@ class ProduitController extends Controller
     {
         $produit = Produit::all();
 
-
-        return response()->json([
-            'results' => $produit
-        ], 200);
+        return response()->json(
+            $produit
+        , 200);
     }
     public function store(ProduitRequest $request)
     {
