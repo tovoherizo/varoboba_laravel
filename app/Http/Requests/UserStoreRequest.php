@@ -27,26 +27,27 @@ class UserStoreRequest extends FormRequest
                 'email' => 'required|string',
                 'password' => 'required|string'
             ];
-        }else{
-        return[
-            'name'=>'required|string|max:258',
-            'email'=>'required|string',
-            'password'=>'required|string'
-        ];
-    }
-    }
-    public function message(){
-        if(request()->isMethod('post')){
-            return[
-                'name.required'=>'name is required',
-                'email.required'=>'email is required',
-                'password.required'=>'password is required'
+        } else {
+            return [
+                'name' => 'required|string|max:258',
+                'email' => 'required|string',
+                'password' => 'required|string'
             ];
-        }else{
-            return[
-                'name.required'=>'name is required',
-                'email.required'=>'email is required',
-                'password.required'=>'password is required'
+        }
+    }
+    public function message()
+    {
+        if (request()->isMethod('post')) {
+            return [
+                'name.required' => 'name is required',
+                'email.required' => 'email is required',
+                'password.required' => 'password is required'
+            ];
+        } else {
+            return [
+                'name.required' => 'name is required',
+                'email.required' => 'email is required',
+                'password.required' => 'password is required'
             ];
         }
     }
