@@ -6,6 +6,7 @@ namespace Database\Seeders;
 
 use App\Models\CategorieProduit;
 use App\Models\MarqueProduit;
+use App\Models\Produit;
 use App\Models\TailleProduit;
 use App\Models\TrancheAge;
 use Illuminate\Database\Seeder;
@@ -252,100 +253,103 @@ class DatabaseSeeder extends Seeder
         // );
 
 
-        TailleProduit::factory()->create(
-            [
-                'nom_taille_produit' => 'L'
-            ]
-        );
+        // TailleProduit::factory()->create(
+        //     [
+        //         'nom_taille_produit' => 'L'
+        //     ]
+        // );
 
-        TailleProduit::factory()->create(
-            [
-                'nom_taille_produit' => 'M'
-            ]
-        );
+        // TailleProduit::factory()->create(
+        //     [
+        //         'nom_taille_produit' => 'M'
+        //     ]
+        // );
 
-        TailleProduit::factory()->create(
-            [
-                'nom_taille_produit' => 'XL'
-            ]
-        );
+        // TailleProduit::factory()->create(
+        //     [
+        //         'nom_taille_produit' => 'XL'
+        //     ]
+        // );
 
-        TailleProduit::factory()->create(
-            [
-                'nom_taille_produit' => 'XXL'
-            ]
-        );
+        // TailleProduit::factory()->create(
+        //     [
+        //         'nom_taille_produit' => 'XXL'
+        //     ]
+        // );
 
-        TailleProduit::factory()->create(
-            [
-                'nom_taille_produit' => 'ML'
-            ]
-        );
+        // TailleProduit::factory()->create(
+        //     [
+        //         'nom_taille_produit' => 'ML'
+        //     ]
+        // );
 
-        TailleProduit::factory()->create(
-            [
-                'nom_taille_produit' => '15'
-            ]
-        );
+        // TailleProduit::factory()->create(
+        //     [
+        //         'nom_taille_produit' => '15'
+        //     ]
+        // );
 
-        TailleProduit::factory()->create(
-            [
-                'nom_taille_produit' => '20'
-            ]
-        );
+        // TailleProduit::factory()->create(
+        //     [
+        //         'nom_taille_produit' => '20'
+        //     ]
+        // );
 
-        TailleProduit::factory()->create(
-            [
-                'nom_taille_produit' => '30'
-            ]
-        );
+        // TailleProduit::factory()->create(
+        //     [
+        //         'nom_taille_produit' => '30'
+        //     ]
+        // );
 
-        TailleProduit::factory()->create(
-            [
-                'nom_taille_produit' => '40'
-            ]
-        );
+        // TailleProduit::factory()->create(
+        //     [
+        //         'nom_taille_produit' => '40'
+        //     ]
+        // );
 
-        TailleProduit::factory()->create(
-            [
-                'nom_taille_produit' => '60'
-            ]
-        );
+        // TailleProduit::factory()->create(
+        //     [
+        //         'nom_taille_produit' => '60'
+        //     ]
+        // );
 
-        CategorieProduit::factory()->create(
-            [
-                'nom_categorie_produit' => 'vintage'
-            ]
-        );
-        CategorieProduit::factory()->create(
-            [
-                'nom_categorie_produit' => 'casual'
-            ]
-        );
-        CategorieProduit::factory()->create(
-            [
-                'nom_categorie_produit' => 'sportwear'
-            ]
-        );
-        CategorieProduit::factory()->create(
-            [
-                'nom_categorie_produit' => 'boheme'
-            ]
-        );
-        CategorieProduit::factory()->create(
-            [
-                'nom_categorie_produit' => 'romantique'
-            ]
-        );
-        CategorieProduit::factory()->create(
-            [
-                'nom_categorie_produit' => 'fashion'
-            ]
-        );
-        CategorieProduit::factory()->create(
-            [
-                'nom_categorie_produit' => 'classique'
-            ]
-        );
+        // CategorieProduit::factory()->create(
+        //     [
+        //         'nom_categorie_produit' => 'vintage'
+        //     ]
+        // );
+        // CategorieProduit::factory()->create(
+        //     [
+        //         'nom_categorie_produit' => 'casual'
+        //     ]
+        // );
+        // CategorieProduit::factory()->create(
+        //     [
+        //         'nom_categorie_produit' => 'sportwear'
+        //     ]
+        // );
+        // CategorieProduit::factory()->create(
+        //     [
+        //         'nom_categorie_produit' => 'boheme'
+        //     ]
+        // );
+        // CategorieProduit::factory()->create(
+        //     [
+        //         'nom_categorie_produit' => 'romantique'
+        //     ]
+        // );
+        // CategorieProduit::factory()->create(
+        //     [
+        //         'nom_categorie_produit' => 'fashion'
+        //     ]
+        // );
+        // CategorieProduit::factory()->create(
+        //     [
+        //         'nom_categorie_produit' => 'classique'
+        //     ]
+        // );
+
+        Produit::factory()->count(28)->create();
+
     }
 }
